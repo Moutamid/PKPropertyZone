@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PropertyActivity"
+    android:background="#fff">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sampleRecyclerview"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:elevation="10dp">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+                <EditText
+                    android:id="@+id/search_input_property"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/search_input_style"
+                    android:drawableStart="@drawable/ic_baseline_search_24"
+                    android:drawableLeft="@drawable/ic_baseline_search_24"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Search Area"
+                    android:inputType="text"
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout"
+                    style="@style/tabLayoutTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/toolbar_elevation2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/search_input_property"
+                    app:tabBackground="@color/colorPrimary"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/colorAccent"
+                    app:tabIndicatorHeight="3dp"
+                    app:tabMode="fixed"
+                    app:tabTextAppearance="@style/tabLayoutTheme" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_property"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_baseline_add_24"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/buyer_nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/main_menu"
+            app:itemTextColor="#fff"
+            app:itemIconTint="#fff"
+            android:layout_gravity="start"
+            android:background="@color/colorAccent"/>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

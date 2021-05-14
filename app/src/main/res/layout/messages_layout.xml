@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message_single_layout_two"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chat_receiver_user_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/user_icon" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/receiver_img_msg_cv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+
+        android:layout_toRightOf="@+id/chat_receiver_user_image"
+        app:cardCornerRadius="10dp">
+
+    <ImageView
+        android:id="@+id/receiver_img_msg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/user_icon"
+        android:scaleType="centerCrop">
+
+    </ImageView>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/receiver_txt_cl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/message_text_background"
+        android:layout_toRightOf="@+id/chat_receiver_user_image">
+
+    <TextView
+        android:id="@+id/receiver_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="This is reciever "
+        android:textAlignment="textStart"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/receiver_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4:00 pm"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/receiver_txt"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sender_txt_cl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/message_text_background_two"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/chat_sender_user_image">
+
+    <TextView
+        android:id="@+id/sender_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="Hello"
+        android:textAlignment="textStart"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+        <TextView
+            android:id="@+id/sender_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5:00 pm"
+            android:textColor="@color/headingColor"
+            android:textSize="12sp"
+            android:gravity="end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sender_txt"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sender_img_msg_cv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:layout_toLeftOf="@+id/chat_sender_user_image">
+
+        <ImageView
+            android:id="@+id/sender_img_msg"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/user_icon"
+            android:scaleType="centerCrop">
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chat_sender_user_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/user_icon" />
+
+</RelativeLayout>
+
+
+

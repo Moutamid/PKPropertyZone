@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_margin="30dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/create_account_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Create your account"
+        android:textColor="#5B5B5B"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/et_bg"
+        android:ems="10"
+        android:hint="Name"
+        android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+        android:drawablePadding="10dp"
+        android:inputType="text|textCapWords"
+        android:padding="10dp"
+       android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_account_text" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/et_bg"
+        android:textSize="12sp"
+        android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/et_bg"
+        android:textSize="12sp"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/et_bg"
+        android:textSize="12sp"
+        android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"/>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/chat_btn"
+        android:text="Register"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <TextView
+        android:id="@+id/tv_already_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Already Registered? Login Here"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registerBtn" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_already_register" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

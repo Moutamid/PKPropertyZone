@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "929249891749",
+    "firebase_url": "https://pkpropertyzone-3ea93-default-rtdb.firebaseio.com",
+    "project_id": "pkpropertyzone-3ea93",
+    "storage_bucket": "pkpropertyzone-3ea93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929249891749:android:fb7d095df255e91804444c",
+        "android_client_info": {
+          "package_name": "com.techroof.pkpropertyzone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929249891749-mn696ijk65dpselh718lf06rsss7fb5u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-rXmBsv1lDHsN9sJ3LjNU4YfPA77JYqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929249891749-mn696ijk65dpselh718lf06rsss7fb5u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

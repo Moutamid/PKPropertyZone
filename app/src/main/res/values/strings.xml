@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">PKPropertyZone</string>
+
+    <string-array name="citiesandsectors">
+        <item>Cities/Sectors</item>
+        <item>A-17, Islamabad</item>
+        <item>A-18, Islamabad</item>
+        <item>B-17, Islamabad</item>
+        <item>B-18, Islamabad</item>
+        <item>C-15, Islamabad</item>
+        <item>C-16, Islamabad</item>
+        <item>C-17, Islamabad</item>
+        <item>C-18, Islamabad</item>
+        <item>D-10, Islamabad</item>
+        <item>D-11, Islamabad</item>
+        <item>D-12, Islamabad</item>
+        <item>D-13, Islamabad</item>
+        <item>D-14, Islamabad</item>
+        <item>D-15, Islamabad</item>
+        <item>D-16, Islamabad</item>
+        <item>D-17, Islamabad</item>
+        <item>D-18, Islamabad</item>
+        <item>E-7,  Islamabad</item>
+        <item>E-8,  Islamabad</item>
+        <item>E-9,  Islamabad</item>
+        <item>E-10, Islamabad</item>
+        <item>E-11, Islamabad</item>
+        <item>E-12, Islamabad</item>
+        <item>E-13, Islamabad</item>
+        <item>E-14, Islamabad</item>
+        <item>E-15, Islamabad</item>
+        <item>E-16, Islamabad</item>
+        <item>E-17, Islamabad</item>
+        <item>E-18, Islamabad</item>
+        <item>F-5,  Islamabad</item>
+        <item>F-6,  Islamabad</item>
+        <item>F-7,  Islamabad</item>
+        <item>F-8,  Islamabad</item>
+        <item>F-9,  Islamabad</item>
+        <item>F-10,  Islamabad</item>
+        <item>F-11,  Islamabad</item>
+        <item>F-12,  Islamabad</item>
+        <item>F-13,  Islamabad</item>
+        <item>F-14,  Islamabad</item>
+        <item>F-15,  Islamabad</item>
+        <item>F-16,  Islamabad</item>
+        <item>F-17,  Islamabad</item>
+        <item>F-18,  Islamabad</item>
+        <item>G-5,   Islamabad</item>
+        <item>G-6,   Islamabad</item>
+        <item>G-7,   Islamabad</item>
+        <item>G-8,   Islamabad</item>
+        <item>G-9,   Islamabad</item>
+        <item>G-10,  Islamabad</item>
+        <item>G-11,  Islamabad</item>
+        <item>G-12,  Islamabad</item>
+        <item>G-13,  Islamabad</item>
+        <item>G-14,  Islamabad</item>
+        <item>G-15,  Islamabad</item>
+        <item>G-16,  Islamabad</item>
+        <item>G-17,  Islamabad</item>
+        <item>G-18,  Islamabad</item>
+        <item>H-8,   Islamabad</item>
+        <item>H-9,   Islamabad</item>
+        <item>H-10,  Islamabad</item>
+        <item>H-11,  Islamabad</item>
+        <item>H-12,  Islamabad</item>
+        <item>H-13,  Islamabad</item>
+        <item>H-14,  Islamabad</item>
+        <item>H-15,  Islamabad</item>
+        <item>H-16,  Islamabad</item>
+        <item>H-17,  Islamabad</item>
+        <item>H-18,  Islamabad</item>
+        <item>I-8,   Islamabad</item>
+        <item>I-9,   Islamabad</item>
+        <item>I-10,  Islamabad</item>
+        <item>I-11,  Islamabad</item>
+        <item>I-12,  Islamabad</item>
+        <item>I-13,  Islamabad</item>
+        <item>I-14,  Islamabad</item>
+        <item>I-15,  Islamabad</item>
+        <item>I-16,  Islamabad</item>
+        <item>I-17,  Islamabad</item>
+        <item>I-18,  Islamabad</item>
+        <item>Bahria Town</item>
+        <item>Rawalpindi</item>
+        <item>Lahore</item>
+        <item>Karachi</item>
+        <item>Faislabad</item>
+        <item>Multan</item>
+        <item>Peshawar</item>
+        <item>Gujranwala</item>
+        <item>Sialkot</item>
+        <item>Quetta</item>
+        <item>Hyderabad</item>
+        <item>Gujrat</item>
+        <item>Rahim Yar Khan</item>
+        <item>Attock</item>
+        <item>Abbottabad</item>
+        <item>Jhelum</item>
+        <item>Chakwal</item>
+        <item>Gujrat</item>
+        <item>Mardan</item>
+        <item>Sargodha</item>
+        <item>Mirpur</item>
+
+
+    </string-array>
+
+    <string-array name="propertyType">
+        <item>PropertyType</item>
+        <item>Construction</item>
+        <item>Shop</item>
+        <item>Apartment</item>
+    </string-array>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

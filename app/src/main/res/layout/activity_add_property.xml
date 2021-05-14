@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/add_property"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <include
+        android:id="@+id/add_property_include"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/property_type_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:enabled="false"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/et_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_property_include"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_construction"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="24dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/property_type_et">
+
+        <EditText
+            android:id="@+id/construction_property_desc"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/et_bg"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="Property Description"
+            android:inputType="text|textCapSentences"
+            android:padding="10dp"
+           android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/addConstructionPropertyBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/chat_btn"
+            android:text="Add Property"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/construction_property_desc"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_construction">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/property_type_et">
+
+            <EditText
+                android:id="@+id/property_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/et_bg"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:ems="10"
+                android:hint="Property Name"
+                android:inputType="text|textCapWords"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/property_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/et_bg"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:inputType="text|textCapSentences"
+                android:ems="10"
+                android:hint="Property Description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/property_name" />
+
+            <EditText
+                android:id="@+id/property_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/et_bg"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:inputType="number"
+                android:ems="10"
+                android:hint="Property Price"
+               app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/property_desc" />
+
+            <EditText
+                android:id="@+id/property_purpose"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/et_bg"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:inputType="text|textCapSentences"
+                android:ems="10"
+                android:hint="Property Purpose"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/property_price" />
+
+            <EditText
+                android:id="@+id/full_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/et_bg"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:inputType="text|textCapSentences"
+                android:ems="10"
+                android:hint="Full Address"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/property_purpose" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:padding="10dp"
+                android:text="Add Image"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/full_address" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/add_img"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  Add\n Image"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/uploaded_file_img"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/uploaded_img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+            <ImageView
+                android:id="@+id/cancel_img_file"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_baseline_cancel_24"
+                app:layout_constraintStart_toEndOf="@+id/uploaded_file_img"
+                app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="32dp"
+                android:padding="10dp"
+                android:text="Add Video (Optional)"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_img" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/add_video"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  Add\n Video"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/uploaded_file_video"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/uploaded_img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+            <ImageView
+                android:id="@+id/cancel_video_file"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_baseline_cancel_24"
+                app:layout_constraintStart_toEndOf="@+id/uploaded_file_img"
+                app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+            <Button
+                android:id="@+id/addPropertyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/chat_btn"
+                android:text="Add Property"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/add_video" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/addPropertyBtn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

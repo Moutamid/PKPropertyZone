@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent">
+
+   <!-- <ImageView
+        android:id="@+id/nav_img"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:src="@drawable/nav_img"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/black_bg_2"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/nav_user_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/user_icon"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#fff"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/hello_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello,"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        app:fontFamily="@font/comfortaa"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@id/nav_user_name"
+        app:layout_constraintStart_toEndOf="@id/nav_user_img"
+        />
+
+    <TextView
+        android:id="@+id/nav_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Muhammad Saad"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        app:fontFamily="@font/comfortaa"
+        android:textColor="#fff"
+        app:layout_constraintStart_toEndOf="@id/nav_user_img"
+        app:layout_constraintBottom_toBottomOf="@id/nav_user_img"
+        />
+
+    <View
+        android:id="@+id/horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

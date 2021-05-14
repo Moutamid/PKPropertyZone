@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/property_img"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/prop_img"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/img_pb"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:theme="@style/progressTheme"-->
+<!--                android:visibility="visible"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="@id/property_img"-->
+<!--                app:layout_constraintStart_toStartOf="@id/property_img"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+            <TextView
+                android:id="@+id/property_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Property Name"
+                android:textColor="@color/headingColor"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/property_img"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/property_desc"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="Property Description Property Description Property Description Property Description"
+                android:textColor="@color/headingColor"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/property_img"
+                app:layout_constraintTop_toBottomOf="@id/property_name" />
+
+            <ImageView
+                android:id="@+id/address_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_baseline_location_on_242"
+                app:layout_constraintStart_toEndOf="@id/property_img"
+                app:layout_constraintTop_toBottomOf="@id/property_desc" />
+
+            <TextView
+                android:id="@+id/address_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/headingColor"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/address_img"
+                app:layout_constraintStart_toEndOf="@id/address_img"
+                app:layout_constraintTop_toTopOf="@+id/address_img" />
+
+            <TextView
+                android:id="@+id/property_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="15000"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@color/headingColor"
+                app:layout_constraintStart_toEndOf="@id/property_img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

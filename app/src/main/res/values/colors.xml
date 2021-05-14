@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#39000000</color>
+    <color name="colorAccent">#04B004</color>
+    <color name="buttonColor">#7b77d1</color>
+    <color name="textColor">#484848</color>
+    <color name="headingColor">#7A7F8E</color>
+    <color name="yellow">#F7CF33</color>
+    <color name="one">#8cc63e</color>
+    <color name="green">#D504B004</color>
+    <color name="greenDark">#04B004</color>
+    <color name="greenCart">#03ad53</color>
+    <color name="two">#4e6ce8</color>
+    <color name="three">#2f48a5</color>
+    <color name="four">#3fc4fd</color>
+    <color name="five">#2fc7d5</color>
+    <color name="six">#f8a7ae</color>
+    <color name="seven">#93bffe</color>
+    <color name="eight">#eca7f8</color>
+    <color name="nine">#fcb460</color>
+    <color name="ten">#d7dbe6</color>
+    <color name="red">#f44336</color>
+    <color name="priceColor">#ff0b18</color>
+    <color name="nav_color">#ff5757</color>
+    <color name="eleven">#24c8d2</color>
+    <color name="textInputBoxBackgroundColor">#07FF5757</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#1EFF5757</color>
+</resources>
